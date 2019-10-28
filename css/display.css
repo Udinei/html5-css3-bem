@@ -1,0 +1,50 @@
+body {
+  font-size: 32px;
+}
+
+.nome-empresa{
+    background-color: pink;
+}
+
+.seguimento-empresa {
+    background-color: red;
+}
+
+.curso-html {
+    background-color: #00dd00;
+}
+
+.curso-css {
+    background-color: #fdff11;
+}
+
+.curso-java {
+    background-color: #00dddd;
+}
+
+.curso-bootstrap {
+    background-color: #ee00da;
+}
+
+.nome-empresa, .seguimento-empresa {
+    display: block; /*block: um em baixo do outo, permite aplicar largura e altura*/
+    height: 100px;
+    width: 300px;
+}
+
+.curso-html, .curso-css {
+   /* inline: nao permite nem largura e nem algura, aceita
+    espaçamento interno e margem lateral, os elementos ficam lado a lado */
+    display: inline;
+    height: 100px; 
+    width: 300px;
+}
+
+.curso-java, .curso-bootstrap {
+    /* inline-block: permite largura e nem algura, aceita
+    espaçamento interno e margem lateral, os elementos ficam lado a lado */
+    display: inline-block;
+    height: 100px;
+    width: 300px;
+}
+

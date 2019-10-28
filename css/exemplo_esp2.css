@@ -1,0 +1,34 @@
+/* especificidade ordem de prioridade
+ 1 - id #
+ 2 - classe .
+ 3 - seletor padrao h1, body, etc..
+ se os seletores id, e classes forem iguais
+ o ultima que sera aplicado.
+
+ ORDEM DO PESO ID, CLASSE, TAG ex:
+ ID Classe Tag
+ 1    1      1
+*/
+body {
+    font-size: 32px;
+}
+
+header#cabecalho h1.logo{ /* 112 */
+    color:yellow;
+}
+
+header#cabecalho .logo{ /* 111 */
+    color:purple;
+}
+
+#cabecalho .logo { /* 110 */
+    color: red;
+}
+
+header .logo { /* 011 */
+   color: green;
+}
+
+.logo {
+    color: blue /*010*/
+}

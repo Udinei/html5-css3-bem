@@ -1,0 +1,38 @@
+
+body {
+    font-size: 32px;
+    margin: 0;
+}
+
+/*aplica a todos os elementos da pagina*/
+*{
+    box-sizing: border-box; /* exibe exatamente, o espaco que os elementos ocupam na pagina */
+}
+
+.frase1, .frase2, .referencia {
+    width: 500px;
+    
+    text-align: justify;
+    background-color: yellow;
+}
+
+p {
+    margin: 10px;
+}
+
+.referencia {
+    background-color: blue;
+    height: 20px;
+}
+
+.frase1 {
+   /* box-sizing: content-box; mais dificil de usar, expando o conteudo*/
+    padding: 20px;
+    border: 3px solid red;
+}
+
+.frase2 {
+    
+    padding: 20px;
+    border: 20px solid red;
+}

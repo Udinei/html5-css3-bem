@@ -1,0 +1,15 @@
+/*tamnho de fonte fixa em pixel nao muda mesmo que o usuario 
+mude as configurações de tamanho de fonte do navegador
+a mesma deve ser evitada, quando se quer usar a pagina em 
+varios tipos de dispositivo */
+.caixa {
+    width: 600px;
+    padding: 25px;
+    font-size: 12px;
+
+
+    background-color: #ccc;
+    border: 5px solid black; 
+    
+}
+

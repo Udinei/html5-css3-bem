@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <title>Como instalar o GIT no Windows (Passo a passo!) - { Dicas de Programação }</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="msvalidate.01" content="7C57649AFFBD787D72C669CF569F858F">
+    <meta name="alexaVerifyID" content="T9kEkK7cP5eAPkrWk5OuLEkXMpw">
+    <meta name="google-site-verification" content="JilK5knly2-27fPetequ0la6CjRwjeEZUg1LwyYNoG0">
+    <link href="https://dicasdeprogramacao.com.br/images/favicon.ico" rel="icon">
+    <meta property="og:site_name" content="{ Dicas de Programação }">
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="Gustavo Furtado de Oliveira Alves">
+    <meta property="article:tag" content="[<Tag GIT>, <Tag Instalação>]">
+    <meta property="article:published_time" content="23 de janeiro de 2019">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://dicasdeprogramacao.com.br/como-instalar-o-git-no-windows">
+    <meta property="og:title" content="Como instalar o GIT no Windows (Passo a passo!)">
+    <meta property="og:description"
+        content="O GIT é um dos sistemas de controle de versão mais utilizado por desenvolvedores de softwares. Principalmente por causa do Github, recentemente comprado pela Microsoft. >> Inclusive, o código deste blog está todo armazenado no github. Como a maioria dos iniciantes ...">
+    <meta property="og:image"
+        content="https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/destaque-600x315.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="315">
+    <link rel="stylesheet" href="/theme/css/styles.css">
+    <link rel="stylesheet" href="/theme/css/custom.css">
+    <link rel="stylesheet" href="/theme/css/youtube.css">
+    <link rel="stylesheet" href="/theme/css/tag_cloud.css">
+    <link rel="stylesheet" href="/theme/css/share_post.css">
+    <script type="text/javascript"
+        src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js"
+        charset="UTF-8"></script>
+    <link rel="stylesheet" crossorigin="anonymous"
+        href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css" />
+</head>
+
+<body class="home blog">
+    <div id="container" class="hfeed">
+        <header id="header" role="banner">
+            <div class="wrap">
+                <div class="logo">
+                    <h1><a href="https://dicasdeprogramacao.com.br/" title="{ Dicas de Programação }"><img
+                                src="/images/logo.png" alt="{ Dicas de Programação }"></a></h1>
+                </div>
+                <div class="date">Dicas para programação e desenvolvimento de softwares.</div>
+                <div class="search">
+                    <form action="https://dicasdeprogramacao.com.br/resultado-da-busca/" id="searchform">
+                        <div><input type="hidden" name="cx" value="partner-pub-6041601556788047:2286672573"><input
+                                type="hidden" name="cof" value="FORID:10"><input type="hidden" name="ie"
+                                value="UTF-8"><input type="text" name="q" size="55" class="searchfield"
+                                placeholder="Procurar"><input type="submit" name="sa" value="Pesquisar" class="submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a target="_blank" class="twitter" href="https://twitter.com/dicasprog"
+                                title="Twitter">Twitter</a></li>
+                        <li><a target="_blank" class="fb"
+                                href="https://www.facebook.com/pages/Dicas-de-Programa%C3%A7%C3%A3o/124525944396823"
+                                title="Facebook">Facebook</a></li>
+                        <li><a target="_blank" class="gplus" href="https://plus.google.com/u/0/107761399787763673743"
+                                title="Google+">Google+</a></li>
+                        <li><a target="_blank" class="rss" href="https://dicasdeprogramacao.com.br/feeds/all.atom.xml"
+                                title="RSS">RSS</a></li>
+                        <li><a class="contact" href="https://dicasdeprogramacao.com.br/contato"
+                                title="Contato">Contato</a>
+                        <li><a class="about" href="https://dicasdeprogramacao.com.br/sobre" title="Sobre">Sobre</a>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="banner-header">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins
+                class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6041601556788047"
+                data-ad-slot="1821948575" data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <div id="main">
+            <section id="primary">
+                <div id="content" class="onesidebar-page" role="main">
+                    <article class="post">
+                        <header class="entry-header">
+                            <h1 class="entry-title">Como instalar o GIT no Windows (Passo a passo!)</h1>
+                            <div class="entry-meta"><span class="date">23 de janeiro de 2019</span><span
+                                    class="author"><a
+                                        href="https://dicasdeprogramacao.com.br/autor/gustavo-furtado-de-oliveira-alves/"
+                                        title="Posts de Gustavo Furtado de Oliveira Alves" rel="author">Gustavo Furtado
+                                        de Oliveira Alves</a></span><span class="category"><a
+                                        href="https://dicasdeprogramacao.com.br/categoria/dicas-de-programacao/">{ Dicas
+                                        de Programação }</a></span><span class="comments"><a
+                                        href="https://dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/#disqus_thread"><i
+                                            class="fa fa-comment-o"></i></a></span></div>
+                        </header>
+                        <div class="entry-content">
+                            <p>O GIT é um dos sistemas de controle de versão mais utilizado por desenvolvedores de
+                                softwares. Principalmente por causa do <a href="https://github.com"
+                                    target="_blank">Github</a>, recentemente comprado pela Microsoft.</p>
+                            <p><a href="https://dicasdeprogramacao.com.br/migracao-do-blog-para-site-estatico/"
+                                    target="\blank">&gt;&gt; Inclusive, o código deste blog está todo armazenado no
+                                    github</a>.</p>
+                            <p>Como a maioria dos iniciantes em programação utilizam o Windows e uma hora ou outra vão
+                                precisar instalar o GIT no Windows. Resolvir escrever este post para mostrar o
+                                passo-a-passo da instalação do GIT no Windows, visto que a instalação do GIT pode gerar
+                                algumas dúvidas em quem não está acostumado com algumas ferramentas do Linux.</p>
+                            <p>Enfim, explico abaixo todo o processo de instalação do GIT no Windows, mas caso você
+                                ainda fique com alguma dúvida não exite em perguntar nos comentários!</p>
+                            <p>Vamos lá?</p>
+                            <h2>Instalação do GIT no Windows</h2>
+                            <p><img alt="GIT e Windows" src="/images/como-instalar-o-git-no-windows/destaque.png"
+                                    style="padding:10px;width:100%;"></p>
+                            <p>Primeiro, acesse o <a href="https://git-scm.com/downloads" target="_blank">site
+                                    oficial</a> para baixar o instalador do git. Escolha o sistema operacional que você
+                                pretende instalar (no meu caso é o Windows) e baixe o instalador apropriado.</p>
+                            <p><img alt="Página de download do instalador do GIT"
+                                    src="/images/como-instalar-o-git-no-windows/site-download-git.png"
+                                    style="padding:10px;"></p>
+                            <p>Após o instalador ser baixado, execute-o.</p>
+                            <p><img alt="Executando o instalador do GIT"
+                                    src="/images/como-instalar-o-git-no-windows/executando-o-instalador-do-git.png"
+                                    style="padding:10px;"></p>
+                            <p>A primeira tela do instalador do GIT apresenta os termos da licença de utilização do GIT.
+                                Basta clicar em <strong>Next</strong>.</p>
+                            <p><img alt="Primeira tela do instalador do GIT."
+                                    src="/images/como-instalar-o-git-no-windows/instalador-git-01-termos.png"
+                                    style="padding:10px;"></p>
+                            <p>A segunda tela é para a seleção do local da instalação, eu mantenho o padrão
+                                <code>C:\Program Files\Git</code>, mas sinta-se livre para alterar. Após definir o local
+                                da instalação do GIT, clique em <strong>Next</strong>.</p>
+                            <p><img alt="Tela de seleção do local de instalação do GIT."
+                                    src="/images/como-instalar-o-git-no-windows/instalador-git-02-local.png"
+                                    style="padding:10px;"></p>
+                            <p>Agora o instalador oferece a possibilidade de selecionar os componentes do GIT que
+                                queremos que seja instalado.</p>
+                            <p>Eu não gosto de adicionar ícones no Desktop, por isso eu desmarco. Os demais componentes
+                                eu marquei todos:</p>
+                            <ul>
+                                <li>Integração com Windows Explorer</li>
+                                <li>Suporte a arquivos grandes</li>
+                                <li>Associação de arquivos, e editor de texto padrão</li>
+                                <li>Permitir que o prompt de comandos seja colorido para as opções do git</li>
+                                <li>Verificação diária de atualização.</li>
+                            </ul>
+                            <p>Escolha os componentes de sua preferência e clique em <strong>Next</strong>.</p>
+                            <p><img alt="Tela de seleção de componentes do GIT."
+                                    src="/images/como-instalar-o-git-no-windows/instalador-git-03-componentes.png"
+                                    style="padding:10px;"></p>
+                            <p>Em seguida o instalador do GIT nos indica que criará uma pasta com atalhos no menu
+                                iniciar, se quiser, você pode marcar o
+                                <em>checkbox</em><code>Don't create a Start Menu folder</code> para o instalador não
+                                criar esta pasta.</p>
+                            <p>No meu caso eu deixei o instalador criar os atalhos no menu Iniciar.</p>
+                            <p>Clique em <strong>Next</strong> para continuar a instalação.</p>
+                            <p><img alt="Tela de criação de atalho do GIT no menu Iniciar"
+                                    src="/images/como-instalar-o-git-no-windows/instalador-git-04-atalho-iniciar.png"
+                                    style="padding:10px;"></p>
+                            <p>Na sequência o instalador pede para selecionarmos o editor de texto que deve ser
+                                utilizado para editar os conflitos que por ventura acontecerem.</p>
+                            <p>Eu gosto do Vim mesmo, mas você pode não tem muita afinidade com o Vim você pode alterar
+                                para Notepad++, Sublime, Atom, VS Code, ou outro editor de sua preferência.</p>
+                            <p>Após a escolha, clique em <strong>Next</strong> para continuar com a instalação.</p>
+                            <p><img alt="Tela de seleção do editor de conflitos padrão do GIT"
+                                    src="/images/como-instalar-o-git-no-windows/instalador-git-05-editor-de-conflitos.png"
+                                    style="padding:10px;"></p>
+                            <p>Neste momento começa algumas partes confusas para quem não conhece muito o GIT.</p>
+                            <p>Na próxima tela o instalador do GIT nos pergunta se queremos usar os comandos do git:</p>
+                            <ul>
+                                <li>somente no prompt de comandos do próprio git (chamado de Git Bash), neste caso ele
+                                    não vai alterar a variável de ambiente PATH.</li>
+                                <li>no prompt do Windows (Windows Command Prompt), neste caso a variável de ambiente
+                                    PATH será alterada para incluir o caminho de onde está o executável git.exe.</li>
+                                <li>no prompt do Windows + comandos utilitários do línux. Eu sempre marco esta opção,
+                                    porque o instalador traz para o Windows alguns comando que eu uso muito no Linux,
+                                    como <code>cat</code>, <code>ls</code>, <code>find</code>, etc. Neste caso a
+                                    variável de ambiente PATH será alterada para incluir o caminho do executável git.exe
+                                    e dos executáveis de cada comando utilitário do linux.</li>
+                            </ul>
+                            <p>Escolha a opção que acha mais adequada para você e clique em <strong>Next</strong>.</p>
+                            <p><img alt="Tela de ajuste da variável de ambiente PATH."
+                                    src="/images/como-instalar-o-git-no-windows/instalador-git-05-comandos-linux.png"
+                                    style="padding:10px;"></p>
+                            <p>A tela seguinte do instalador oferece a opção de escolhar a biblioteca de validação de
+                                chaves de segurança SSL.</p>
+                            <p>Eu costumo utilizar a OpenSSL, que é compatível com outras plataformas.</p>
+                            <p>Escolha a que achar apropriada e clique em <strong>Next</strong>.</p>
+                            <p><img alt="Tela de seleção de biblioteca de validação de certificados SSL"
+                                    src="/images/como-instalar-o-git-no-windows/instalador-git-06-biblioteca-ssl.png"
+                                    style="padding:10px;"></p>
+                            <p>Neste ponto da instalação, nos é perguntado como o git deve tratar o final dos arquivos
+                                de texto.</p>
+                            <p>Este é um assunto complicado de explicar em poucas palavras, mas vamos lá ...</p>
+                            <p>Vamos dar uma pequena pausa na instalação do GIT aqui para entender esse assunto.</p>
+                            <h2>Como é tratado o final de linha dos arquivos de textos</h2>
+                            <p>O Windows e o Unix, tratam o final de linha dos arquivos texto de formas diferentes.</p>
+                            <p>Pra resumir a história ... o Windows segue um padrão antigo de comandos de impressora,
+                                chamado de CRLF, que indica para o cabeçote da impressora ir para o início horizontal
+                                (Carriage Return) e para iniciar uma próxima linha (Line Feed).</p>
+                            <p>Como se fosse aquela alavanca da máquina de escrever que funciona dessa forma, <em>vai
+                                    pro início e para a próxima linha</em>.</p>
+                            <p>Já no linux, ficou comum somente o comando LF que teria o mesmo funcionamento do CRLF, ou
+                                seja, <em>próxima linha...início.</em></p>
+                            <p>Isso significa que o Linux usa um caracter ASCII para a quebra de linha e o Windows usa
+                                dois. Esta é a mesma origem da confusão entre <code>\n</code> e <code>\r</code>, mas
+                                isso é assunto pra outro post.</p>
+                            <p>Por agora entenda as opções que o instalador do GIT oferece:</p>
+                            <ul>
+                                <li>converter <code>LF</code> para <code>CRLF</code> ao baixar arquivos e
+                                    <code>CRLF</code> para <code>LF</code> ao comitar.</li>
+                                <li>baixar como é (não converte nada), mas comitar convertendo <code>CRLF</code> para
+                                    <code>LF</code>.</li>
+                                <li>não converter nada, baixar como é e comitar como estiver.</li>
+                            </ul>
+                            <p>Eu marco a primeira opção, para evitar problemas de compatibilidade entre as plataformas.
+                            </p>
+                            <p><img alt="Tela de configuração de final de linha do instalador do GIT."
+                                    src="/images/como-instalar-o-git-no-windows/instalador-git-07-caracter-de-final-de-linha.png"
+                                    style="padding:10px;"></p>
+                            <h2>Continuando a instalação ...</h2>
+                            <p>Na sequência, o instalador oferece a opção de escolher o emulador de terminal (prompt)
+                                que queremos usar para o GIT. Podemos usar o console padrão do Windows (cmd.exe) ou o
+                                MinTTY que é um emulador que oferece algumas características melhores na minha opinião.
+                            </p>
+                            <p>Em suma, o cmd é usado para compatibilidade com plataformas de 32 bits, ou seja, se o seu
+                                windows for 32 bits, é melhor escolher o cmd mesmo, mas se o seu windows for de 64 bits,
+                                é melhor escolher o MinTTY, pq ele oferece alguns recursos melhores para terminal, como
+                                por exemplo <strong>maximizar</strong>.</p>
+                            <p><img alt="Tela de escolha de emulador de terminal do GIT."
+                                    src="/images/como-instalar-o-git-no-windows/instalador-git-08-emulador-de-terminal.png"
+                                    style="padding:10px;"></p>
+                            <p>A penúltima tela nos oferece algumas opções extras, são elas:</p>
+                            <ul>
+                                <li>habilitar cache de arquivos na memória. Isso melhora o desempenho do git em alguns
+                                    casos.</li>
+                                <li>habilitar o gerenciador de credenciais do GIT. Isso permite autenticação em duas
+                                    etapas no VSTS e no GitHub, e precisa do framework .NET 4.5 para funcionar.</li>
+                                <li>habilitar links simbólicos: Sinceramente, não sei o que é isso no Windows e não me
+                                    fez falta ainda, se você souber do que se trata, apreciarei muito uma explicação aí
+                                    nos comentários. ;)</li>
+                            </ul>
+                            <p>Selecione os itens opcionais que você deseja e clique em <strong>Next</strong>.</p>
+                            <p><img alt="Tela de escolha de ítens opcionais do GIT no Windows"
+                                    src="/images/como-instalar-o-git-no-windows/instalador-git-09-opcoes-extras.png"
+                                    style="padding:10px;"></p>
+                            <p>Por fim, última tela do instalador do GIT no Windows (UFA!!!), o instalador nos oferece
+                                alguns componentes que estão em fase de experimentação.</p>
+                            <p>São componentes que não foram muito testados, mas que parecem melhorar bastante a
+                                performance.</p>
+                            <p>Você escolhe se que instala ou não ...</p>
+                            <p>Eu não marquei.</p>
+                            <p>Após decidir se instala os componentes experimentais ou não, clique em
+                                <strong>Install</strong> para começar a instalação.</p>
+                            <p><img alt="Tela de seleção de componentes experimentais do GIT."
+                                    src="/images/como-instalar-o-git-no-windows/instalador-git-10-componentes-experimentais.png"
+                                    style="padding:10px;"></p>
+                            <p>Depois da instalação, o instalador oferece a opção de já rodar o prompt do GIT (Git Bash)
+                                e ver o arquivo de texto com as notas da versão lançada.</p>
+                            <p>Se quiser uma dessas duas opções, marque-a, eu desmarquei as duas.</p>
+                            <p>Para finalizar, clique em <strong>Finish</strong>.</p>
+                            <p><img alt="Tela final do instalador do GIT"
+                                    src="/images/como-instalar-o-git-no-windows/instalador-git-11-finalizar-instalacao.png"
+                                    style="padding:10px;"></p>
+                            <p>Pronto, agora você tem o GIT instalado no seu Windows!</p>
+                            <p>Espero que este post tenha te ajudado na instalação do GIT, se você ficou com dúvida em
+                                alguma parte, comente logo aqui abaixo.</p>
+                        </div>
+                        <div id="share_post">
+                            <div id="share_post-box" style="margin-left: -113px; top: 220px;">
+                                <div id="share_post-twitter"><a
+                                        href="https://twitter.com/intent/tweet?text=Como%20instalar%20o%20GIT%20no%20Windows%20%28Passo%20a%20passo%21%29&url=https%3A//dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/"
+                                        target="_blank"><img src="/theme/images/share_post/twitter.png"
+                                            alt="Twitter"></a></div>
+                                <div id="share_post-googleplus"><a
+                                        href="https://plus.google.com/share?url=https%3A//dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/"
+                                        target="_blank"><img src="/theme/images/share_post/google.png" alt="Google"></a>
+                                </div>
+                                <div id="share_post-facebook"><a
+                                        href="http://www.facebook.com/sharer/sharer.php?u=https%3A//dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/"
+                                        target="_blank"><img src="/theme/images/share_post/facebook.png"
+                                            alt="Facebook"></a></div>
+                                <div id="share_post-linkedin"><a
+                                        href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/&title=Como%20instalar%20o%20GIT%20no%20Windows%20%28Passo%20a%20passo%21%29&summary=O%20GIT%20%C3%A9%20um%20dos%20sistemas%20de%20controle%20de%20vers%C3%A3o%20mais%20utilizado%20por%20desenvolvedores%20de%20softwares.%0APrincipalmente%20por%20causa%20do%20Github%2C%20recentemente%20comprado%20pela%20Microsoft.%0A%3E%3E%20Inclusive%2C%20o%20c%C3%B3digo%20deste%20blog%20est%C3%A1%20todo%20armazenado%20no%20github.%0AComo%20a%20maioria%20dos%20iniciantes%20...&source=https%3A//dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/"
+                                        target="_blank"><img src="/theme/images/share_post/linkedin.png"
+                                            alt="LinkedIn"></a></div>
+                                <div id="share_post-email"><a
+                                        href="mailto:?subject=Como%20instalar%20o%20GIT%20no%20Windows%20%28Passo%20a%20passo%21%29&body=https%3A//dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/"><img
+                                            src="/theme/images/share_post/email.png" alt="Email"></a></div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="entry-author">
+                        <h3 class="author-title">Sobre Gustavo Furtado de Oliveira Alves</h3>
+                        <div class="author-avatar"><img alt src="/images/author-gustavo.jpeg"
+                                class="avatar avatar-68 photo" height="68" width="68"></div>
+                        <div class="author-description"> É mestre em computação aplicada pelo Institudo Nacional de
+                            Pesquisas Espaciais, Engenheiro da Computação pela ETEP Faculdades e Técnico em Informática
+                            pela Escola Técnica Pandiá Calógeras. Possui as certificações ASF, SCWCD e SCJP e trabalha
+                            com desenvolvimento de softwares desde 2007. <div id="author-link"><a
+                                    href="https://dicasdeprogramacao.com.br/autor/gustavo-furtado-de-oliveira-alves/"
+                                    rel="author"> Veja todos os artigos de Gustavo Furtado de Oliveira Alves <span
+                                        class="meta-nav">&rarr;</span></a></div>
+                        </div>
+                    </div>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins
+                        class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6041601556788047"
+                        data-ad-slot="4635814172" data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <div id="disqus_thread"></div>
+                    <script>
+
+                        /**
+                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                        /*
+                        var disqus_config = function () {
+                        this.page.url = https://dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/;  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        */
+                        (function () { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = '//dicas-de-programacao.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                            by Disqus.</a></noscript>
+                </div>
+            </section>
+            <div id="right-sidebar" class="sidebar">
+                <aside id="wellthemes_facebook_widget-2" class="widget widget_facebook">
+                    <h3>Curta nossa página no Facebook</h3>
+                    <div id="fb-root"></div>
+                    <script>(function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s); js.id = id;
+                            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=909889155773699";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+                    <div class="fb-page"
+                        data-href="https://www.facebook.com/Dicas-de-Programa%C3%A7%C3%A3o-124525944396823/"
+                        data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/Dicas-de-Programa%C3%A7%C3%A3o-124525944396823/"
+                            class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/Dicas-de-Programa%C3%A7%C3%A3o-124525944396823/"> Dicas
+                                de Programação </a></blockquote>
+                    </div>
+                </aside>
+                <aside id="text-13" class="widget widget_text">
+                    <div class="textwidget">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins
+                            class="adsbygoogle" style="display:inline-block;width:300px;height:600px"
+                            data-ad-client="ca-pub-6041601556788047" data-ad-slot="5136065371"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </aside>
+                <aside id="wellthemes_recent_posts_text_widget-2" class="widget widget_posts">
+                    <h3>Artigos Recentes</h3>
+                    <div class="item-post">
+                        <h3><a href="https://dicasdeprogramacao.com.br/como-instalar-o-mysql-no-windows/" rel="bookmark"
+                                title="Leia: Como instalar o MySQL no Windows (Passo a passo!)"> Como instalar o MySQL
+                                no Windows (Passo a passo!) </a></h3>
+                        <div class="entry-meta"><span class="author"><a
+                                    href="https://dicasdeprogramacao.com.br/autor/gustavo-furtado-de-oliveira-alves/"
+                                    title="Posts de Gustavo Furtado de Oliveira Alves" rel="author"> Gustavo Furtado de
+                                    Oliveira Alves </a></span><br><span class="comments"><a
+                                    href="https://dicasdeprogramacao.com.br/como-instalar-o-mysql-no-windows/#disqus_thread"><i
+                                        class="fa fa-comment-o"></i></a></span></div>
+                    </div>
+                    <div class="item-post">
+                        <h3><a href="https://dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/" rel="bookmark"
+                                title="Leia: Como instalar o GIT no Windows (Passo a passo!)"> Como instalar o GIT no
+                                Windows (Passo a passo!) </a></h3>
+                        <div class="entry-meta"><span class="author"><a
+                                    href="https://dicasdeprogramacao.com.br/autor/gustavo-furtado-de-oliveira-alves/"
+                                    title="Posts de Gustavo Furtado de Oliveira Alves" rel="author"> Gustavo Furtado de
+                                    Oliveira Alves </a></span><br><span class="comments"><a
+                                    href="https://dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/#disqus_thread"><i
+                                        class="fa fa-comment-o"></i></a></span></div>
+                    </div>
+                    <div class="item-post">
+                        <h3><a href="https://dicasdeprogramacao.com.br/como-validar-um-cpf-em-javascript/"
+                                rel="bookmark" title="Leia: Como validar um CPF em JavaScript"> Como validar um CPF em
+                                JavaScript </a></h3>
+                        <div class="entry-meta"><span class="author"><a
+                                    href="https://dicasdeprogramacao.com.br/autor/gustavo-furtado-de-oliveira-alves/"
+                                    title="Posts de Gustavo Furtado de Oliveira Alves" rel="author"> Gustavo Furtado de
+                                    Oliveira Alves </a></span><br><span class="comments"><a
+                                    href="https://dicasdeprogramacao.com.br/como-validar-um-cpf-em-javascript/#disqus_thread"><i
+                                        class="fa fa-comment-o"></i></a></span></div>
+                    </div>
+                    <div class="item-post">
+                        <h3><a href="https://dicasdeprogramacao.com.br/o-que-e-json/" rel="bookmark"
+                                title="Leia: O mínimo que você precisa saber sobre JSON para ser um bom programador!"> O
+                                mínimo que você precisa saber sobre JSON para ser um bom programador! </a></h3>
+                        <div class="entry-meta"><span class="author"><a
+                                    href="https://dicasdeprogramacao.com.br/autor/gustavo-furtado-de-oliveira-alves/"
+                                    title="Posts de Gustavo Furtado de Oliveira Alves" rel="author"> Gustavo Furtado de
+                                    Oliveira Alves </a></span><br><span class="comments"><a
+                                    href="https://dicasdeprogramacao.com.br/o-que-e-json/#disqus_thread"><i
+                                        class="fa fa-comment-o"></i></a></span></div>
+                    </div>
+                    <div class="item-post">
+                        <h3><a href="https://dicasdeprogramacao.com.br/java-python-ou-javascript/" rel="bookmark"
+                                title="Leia: Java, Python ou Javascript?"> Java, Python ou Javascript? </a></h3>
+                        <div class="entry-meta"><span class="author"><a
+                                    href="https://dicasdeprogramacao.com.br/autor/gustavo-furtado-de-oliveira-alves/"
+                                    title="Posts de Gustavo Furtado de Oliveira Alves" rel="author"> Gustavo Furtado de
+                                    Oliveira Alves </a></span><br><span class="comments"><a
+                                    href="https://dicasdeprogramacao.com.br/java-python-ou-javascript/#disqus_thread"><i
+                                        class="fa fa-comment-o"></i></a></span></div>
+                    </div>
+                    <div class="item-post">
+                        <h3><a href="https://dicasdeprogramacao.com.br/exercicio-algoritmo-par-ou-impar/" rel="bookmark"
+                                title="Leia: Exercício: Algorítmo Par ou Ímpar"> Exercício: Algorítmo Par ou Ímpar </a>
+                        </h3>
+                        <div class="entry-meta"><span class="author"><a
+                                    href="https://dicasdeprogramacao.com.br/autor/gustavo-furtado-de-oliveira-alves/"
+                                    title="Posts de Gustavo Furtado de Oliveira Alves" rel="author"> Gustavo Furtado de
+                                    Oliveira Alves </a></span><br><span class="comments"><a
+                                    href="https://dicasdeprogramacao.com.br/exercicio-algoritmo-par-ou-impar/#disqus_thread"><i
+                                        class="fa fa-comment-o"></i></a></span></div>
+                    </div>
+                </aside>
+                <aside class="widget widget_categories">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li><a class="cat-item" href="https://dicasdeprogramacao.com.br/categoria/banco-de-dados/">Banco
+                                de Dados (10)</a></li>
+                        <li><a class="cat-item"
+                                href="https://dicasdeprogramacao.com.br/categoria/dicas-de-programacao/">{ Dicas de
+                                Programação } (12)</a></li>
+                        <li><a class="cat-item"
+                                href="https://dicasdeprogramacao.com.br/categoria/dicionario-de-programador/">Dicionário
+                                de programador (6)</a></li>
+                        <li><a class="cat-item"
+                                href="https://dicasdeprogramacao.com.br/categoria/iniciante-em-programacao/">Iniciante
+                                em programação (28)</a></li>
+                    </ul>
+                </aside>
+                <aside class="widget">
+                    <h3>Tags</h3>
+                    <ul class="tagcloud"></ul>
+                </aside>
+                <aside id="text-14" class="widget widget_text">
+                    <div class="textwidget">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins
+                            class="adsbygoogle" style="display:inline-block;width:300px;height:600px"
+                            data-ad-client="ca-pub-6041601556788047" data-ad-slot="5136065371"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <script>(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-39997045-1', 'auto'); ga('send', 'pageview');</script>
+    </div>
+    <footer id="footer" role="contentinfo">
+        <div class="footer-widgets"></div>
+        <div class="footer-info">
+            <div class="footer-left">
+                <center><a href="https://dicasdeprogramacao.com.br/">{ Dicas de Programação }</a> © 2018 - <a
+                        href="https://dicasdeprogramacao.com.br/contato">Contato</a> - <a
+                        href="https://dicasdeprogramacao.com.br/sobre">Sobre</a> - by <a
+                        href="http://gustavofurtado.com.br">Gustavo Furtado</a>
+                    <center>
+            </div>
+        </div>
+    </footer>
+    <script id="dsq-count-scr" src="//dicas-de-programacao.disqus.com/count.js" async></script>
+    <script src="/theme/js/share_post.js"></script>
+</body>
+
+</html>

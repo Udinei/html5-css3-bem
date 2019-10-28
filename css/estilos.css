@@ -1,0 +1,54 @@
+/*seletor direto com filhos descendents > 
+article .importante > strong {
+    color: red;
+} 
+
+/*somente os filhos diretos de article com o simbolo > 
+article > .importante > strong {
+    color: red;
+} 
+
+
+article > .importante {
+    color: red;
+} 
+*/
+/* seletor descendente separados por espaco
+.missao strong {
+    color: red;
+}
+article strong{
+    color: red;
+}
+article .missao strong{
+    color:green;
+}
+*/
+
+/* referencia id #
+#titulo {
+    color: red;
+}
+*/
+
+/*
+seletor h1 tera font verdana
+h1 {
+  font-family: Verdana;
+}
+
+tags com id = titulo terao cor blue
+#titulo {
+  color: blue;
+}
+
+classes destaque, tera cor red
+.destaque {
+  color: red;
+}
+
+paragrafos com classe missao tera fonte arial
+p.missao {
+  font-family: Arial;
+}
+*/

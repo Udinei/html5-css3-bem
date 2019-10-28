@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+/*medidas em percentual é uma medida relativa ao elemento pai
+se adequara ao tamanho que o usuario estiver configurado no browser */
+/*.container {
+   font-size: 200%  (32px em relacao ao tamanho padrao 16px do browser)
+}*/
+
+/* a altura padrao de texto no browser (medium) é 16px 
+   para calcular uma altura relativa(%) a esse tamanho 
+   basta fazer, por exemplo a altura deseja de 30 pixel
+   fazer calculo (30 / 16) * 100 = 187.5  187.5% e o valor em porcentagem relativo a 30px.
+   Pra ficar mais facil a conversao deve-se usar como base
+   16px em porcentagem que é igual 62.5%,
+   conforme o calculo:  (10 / 16) * 100 = 62.5 que é igual a 10px
+   em relacao a fonte do navegador que é 16px)*/
+html {
+      font-size: 62.5%; /*= 10px*/
+}
+.caixa {
+    /*width, padding, margin sao relativos ao pai onde esta
+     contido, e nao ao tamanho da pagina, como são os outros elementos css*/
+    width: 50%;  
+    padding: 10%;
+    margin-top: 10%; 
+
+    font-size: 200%;
+
+    background-color: #ccc;
+    border: 5px solid black; /*border nao aceita medidas em %*/
+}
+
+h1 {
+   font-size: 250%
+}
+
+p {
+    font-size: 150%;
+}
+

@@ -1,0 +1,38 @@
+/*  em - relativo ao pai ( componente html, tag div por exemplo) 
+    rem - 
+ em e rem são unidades de medidas relativas, pixel são unidades de medidas fixas
+Ao declarar o tamanho de fonte fixa no documento tag <html>, as configurações
+   do browser sera iguinoradas, não recomendado */
+html{
+   font-size: 10px
+}
+
+/* em - unidade sempre relativa ao elemento pai ( componente html, tag div por exemplo) */
+.texto {
+    font-size: 2em;
+}
+
+.texto h1 {
+    font-size: 3em;
+}
+
+.texto p {
+    border: 0.5em solid black;
+    padding: 0.5em;
+    margin-right: 3em;
+
+    font-size: 2em;
+}
+
+.texto p span {
+    font-size: 0.5em;
+}
+
+/* rem - unidade relativa sempre ao documento (tag <html> ) */
+.comentarios {
+    font-size: 1rem; /* 16px */
+}
+
+.comentarios p {
+    font-size: 2rem;
+}

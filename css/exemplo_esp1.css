@@ -1,0 +1,32 @@
+/* especificidade ordem de prioridade
+ 1 - id #
+ 2 - classe .
+ 3 - seletor padrao h1, body, etc..
+ se os seletores id, e classes forem iguais
+ o ultima que sera aplicado.
+
+ PESO ex:
+ ID Classe Tag
+ 1    1      1
+*/
+body {
+    font-size: 32px;
+}
+/*
+h1 {
+    color: red;
+}*/
+/* # - por id */
+#logo { /* 100 */
+ color: green;
+}
+
+.amarelo {  /* 010 */
+  color: yellow;
+}
+
+h1 { /* 001 */
+    color:blue !important;
+}
+
+

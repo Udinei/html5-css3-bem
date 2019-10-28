@@ -1,0 +1,57 @@
+body {
+    font-size: 32px;
+}
+
+h1 {
+    margin: 0;
+}
+
+article {
+    background-color: #0f0;
+}
+
+footer {
+    background-color: yellow;
+    text-align: center;
+}
+
+.coluna1, .coluna2 {
+    background-color: #ccc;
+}
+
+.coluna1 {
+    float: left;
+    width: 48%;
+}
+
+.coluna2 {
+    float: right;
+    width: 48%;
+}
+/*para anular o float */
+.clearfix {
+    clear: both;
+}
+
+/* pseudo elementos */
+/* Aplica a formatação a primeira letra de todos o filhos <p> diretos de
+   de <article> */
+article > p::first-letter {
+    font-size: 60px;
+    color: red;
+}
+
+/* adiciona antes de <h1> o texto "Titulo:"*/
+h1::before {
+    content: "Titulo: ";
+}
+
+h1::after {
+    content: "Artigo";
+}
+
+article::after {
+  content: "";
+  display: block;
+  clear: both;
+}
